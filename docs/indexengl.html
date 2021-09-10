@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7f4e7dd9d8.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Artificial Inteligence</title>
+    <link rel="icon" href="AI.png">
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <div class="navbar navbar-expand-lg" style="background-color: blue;"><!--clasa navbar este clasa principala pentru bara de navigare-->
+                            <!--clasa collapse navbar-collapse nu este suficienta pentru a afisa elementele din lista unul dupa altul. Pentru asta folosim clasa navbar navbar-expand-lg. Lg este un indicator pentru browser pentru a sti cand sa afiseze elementele in funcyie de marimea ferestrei la un moment dat.-->
+                            <button class="navbar-toggler" data-toggle="collapse" data-target="#navb"><a href="#"><i class="fas fa-bars fa-3x"></i></a></button><!--clasa navbar-toggler afiseaza butonul de meniu atunci cand dimensiunea ferestrei se micsoreaza.--->
+                            <div class="collapse navbar-collapse" id="navb"><!--daca nu ai clasa collapse navbar-collapse elementele din lista vor fi afisate una sub alta.-->
+                                <ul class="navbar-nav mr-auto" id="hamburger"><!--mr-auto= margin right auto. Folosim acwasta clasa intrucat fiecare element nou din lista va fi afisat la dreapta-->
+                                    <li class="navbar-item"><a href="#myfooter" class="navbar-link">CONTACT</a></li><!--clasa navbar-item se refera la randul pe care ne aflam acum in lista iar clasa navbar-link arata linkul la care ne referim acum-->
+                                    <li class="navbar-item"><a href="#example" class="navbar-link">WHAT WOULD A ROBOT LOOK LIKE?</a></li>
+                                    <li class="navbar-item"><a href="#cumpotsainvat" class="navbar-link">HOW CAN I LEARN?</a></li>
+                                </ul>
+                            </div>
+                            <!-- <a href="indexengl.html" style="margin-left: 80%;"><img src="UK.jpg" alt="Eroare" style="width: 70%; height: 20%;"></a> -->
+                </div>
+                <div class="imagine">
+                    <div>
+                        <h1 class="titlu">Artificial Inteligence</h1>
+                        <button class="btn btn-primary-light" type="button" style="text-decoration: none; color: blue;"><a href="#introduce" style="text-decoration: none;">Let's go!</a></button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div>
+                <h1 id="introduce">What is AI?</h1>
+                <p style="color: white; padding-left:4%;">
+                    In simple terms, artificial intelligence (AI) refers to systems or machines that mimic human intelligence to perform various activities and can be improved iteratively based on the information it collects. AI manifests itself in a number of forms.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-sm-6" data-aos="fade-right" style="padding-top: 5%; color: white; padding-left:5% ;">
+                    <h1 style="padding-bottom: 2%;">How did it come about?</h1>
+                    <p>
+                        The beginnings of artificial intelligence can be seen immediately after World War II, in the first programs that solved puzzles or played certain games. There were two reasons (in addition to the fascination it exerts on many) that games were among the first areas of application of artificial intelligence - first, that program performance is easy to measure (most of the time, you either win or lose a game); then, that the rules are generally simple and few in number, so they can be easily described and used.
+                        The games he usually experimented with were chess and checkers. The idea was very simple - given a position on the board, they tried to generate all possible sequences of moves from that moment on, considering that the opponent always chooses the best move. If a sequence reached a winning state, then it was the one to follow. The practical problem with this idea was that the number of combinations to be explored was very high (for example, in chess, on the order of $ 35 ^ {100} $).
+                    </p>
+                </div>
+                <div class="col-sm-4" data-aos="flip-left">
+                    <img src="teacher.svg" alt="Incarcare esuata" class="teacherimage">
+                </div>
+            </div>
+            <div data-aos="zoom-out">
+                <h1 style="color: white; text-align: center; padding:2% 20%; margin-bottom: 8%;" id="cumpotsainvat">How can I learn?</h1>
+            </div>
+            <div class="row" style="color: white;">
+                <div class="col-sm-3" id="python">
+                    <img src="pythonimage.svg" alt="Eroare" style="width: 100%; height: 20%; margin-bottom: 10%;margin-top: 10%;" data-aos="zoom-in" id="pythonimage" onclick="python()">
+                    <p data-aos="fade-up" style="text-indent: 8%;" >Python is in the top three programming languages ​​used by programmers. Due to the complexity and multitude of libraries available, Python is considered a programming language that fits the needs of the AI ​​field.</p>
+                </div>
+                <div  class="col-sm-3" id="statistics">
+                    <img src="probabilitati.svg" alt="Eroare" style="width: 100%; height: 20%; margin-bottom: 10%;margin-top: 10%;" data-aos="zoom-in" id="statisticsimage" onclick="statistics()">
+                    <p data-aos="fade-up" style="text-indent: 8%;">
+                        Since Python has many libraries that involve mathematical formulas, including probabilities and statistics, it would be ideal if you start learning the basics in this area of ​​mathematics.
+                    </p>
+                </div>
+                <div  class="col-sm-3" id="algebra">
+                    <img src="algebra.svg" alt="Eroare" style="width: 90%; height: 20%; margin-bottom: 10%;margin-top: 10%;" data-aos="zoom-in" id="algebraimage" onclick="algebra()"> 
+                    <p data-aos="fade-up" style="text-indent: 8%;">In order to master the probability part, it is important to like mathematics in order to be able to work with dispersions and the relations between favorable and possible cases.</p>
+                </div>
+                <div class="col-sm-3" id="smile">
+                    <img src="zambet.svg" alt="Eroare" style="width: 90%; height: 20%; margin-bottom: 10%;margin-top: 10%;" data-aos="zoom-in" id="smileimage" onclick="smile()">
+                    <p data-aos="fade-up" style="text-indent:8%">
+                        In order to create something useful, both in AI and in other fields, you must be persevering, optimistic and like what you do. Without these ingredients you will not get too far.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h1 style="color: white;margin-top: 5%;margin-bottom: 5%; text-align: center;" id="example" data-aos="zoom-in">Example of robots built in AI</h1>
+            </div>
+            <div>
+                <video src="videoAI.mp4" id="video1" controls type="video/mp4" poster="imagine.jpg" data-aos="fade-right" data-aos-easing="ease-in-back" data-aos-duration="1000" style="width: 50%;height: 50%; position: relative; left: 25%; right: 30%;top: 10%;">Error</video>
+            </div>
+            <div style="margin-top: 10%;">
+                <video src="video2AI.mp4" id="video2"controls type="video/mp4" poster="imagine.jpg" data-aos="fade-left" data-aos-easing="ease-in-back" data-aos-duration="1000" style="width: 50%;height: 50%; position: relative; left: 25%; right: 30%;top: 10%;">Error</video>
+            </div>
+        </div>
+    </main>
+    <footer id="myfooter">
+        <p style="color: white; text-align:center">Even if you don't see us, we are with you. Therefore, you can find us on:</p>
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="#"><i class="fab fa-facebook fa-3x"></i></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="#"><i class="fab fa-youtube fa-3x"></i></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+            </div>
+        </div>
+        <p style="color: white; text-align:center; padding-top: 3%;"> Now we can communicate in:</p>
+        <div class="row">
+            <div class="col-sm-4">
+                <button class="btn btn-primary"><a href="index.html" style="color: white;text-decoration: none;"><img src="Romania.jpg" alt="Eroare" style="width: 50%;height: 50%;"> RO</button></a>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary"><a href="indexfrance.html" style="color: white;text-decoration: none;"><img src="France.png" alt="Eroare" style="width: 50%;height: 50%;"> FR</button></a>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary"><a href="indexgermany.html" style="color: white;text-decoration: none;"><img src="Germany.svg" alt="Eroare" style="width: 50%;height: 50%;"> DE</button></a>
+            </div>
+        </div>
+            <p style="color: white; text-align: center; margin-top: 2%;">Copyright &copy;2020. All rights reserved.</p> 
+    </footer>
+    </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration:2000
+        });
+        function python(){
+            var a=document.getElementById("pythonimage");
+            a=alert('For starters we recommend the online book "Automate the boring stuff with python" ');
+        }
+        function statistics(){
+            var a=document.getElementById("statisticsimage");
+            a=alert('Regarding statistics, we recommend the site www.statista.com');
+        }
+        function algebra(){
+            var a=document.getElementById("algebraimage");
+            a=alert('We know that algebra is not easy, but you have to go through it to get acquainted with the way of thinking in AI. You can start with this site: towardsdatascience.com ');
+        }
+        function smile(){
+            var a=document.getElementById("smileimage");
+            a=alert("Don't forget to take a break from time to time. This will make you to have good ideas easier.");
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+</body>
+</html>

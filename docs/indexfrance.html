@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7f4e7dd9d8.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Intelligence artificielle</title>
+    <link rel="icon" href="AI.png">
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <div class="navbar navbar-expand-lg" style="background-color: blue;"><!--clasa navbar este clasa principala pentru bara de navigare-->
+                            <!--clasa collapse navbar-collapse nu este suficienta pentru a afisa elementele din lista unul dupa altul. Pentru asta folosim clasa navbar navbar-expand-lg. Lg este un indicator pentru browser pentru a sti cand sa afiseze elementele in funcyie de marimea ferestrei la un moment dat.-->
+                            <button class="navbar-toggler" data-toggle="collapse" data-target="#navb"><a href="#"><i class="fas fa-bars fa-3x"></i></a></button><!--clasa navbar-toggler afiseaza butonul de meniu atunci cand dimensiunea ferestrei se micsoreaza.--->
+                            <div class="collapse navbar-collapse" id="navb"><!--daca nu ai clasa collapse navbar-collapse elementele din lista vor fi afisate una sub alta.-->
+                                <ul class="navbar-nav mr-auto" id="hamburger"><!--mr-auto= margin right auto. Folosim acwasta clasa intrucat fiecare element nou din lista va fi afisat la dreapta-->
+                                    <li class="navbar-item"><a href="#myfooter" class="navbar-link">CONTACT</a></li><!--clasa navbar-item se refera la randul pe care ne aflam acum in lista iar clasa navbar-link arata linkul la care ne referim acum-->
+                                    <li class="navbar-item"><a href="#example" class="navbar-link">À QUOI RESSEMBLERAIT UN ROBOT?</a></li>
+                                    <li class="navbar-item"><a href="#cumpotsainvat" class="navbar-link">COMMENT PUIS-JE APPRENDRE?</a></li>
+                                </ul>
+                            </div>
+                            <!-- <a href="indexengl.html" style="margin-left: 80%;"><img src="UK.jpg" alt="Eroare" style="width: 70%; height: 20%;"></a> -->
+                </div>
+                <div class="imagine">
+                    <div>
+                        <h1 class="titlu">Intelligence artificielle</h1>
+                        <button class="btn btn-primary-light" type="button" style="text-decoration: none; color: blue;"><a href="#introduce" style="text-decoration: none;">Commençons!</a></button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div>
+                <h1 id="introduce">Qu'est-ce que l'IA?</h1>
+                <p style="color: white; padding-left:4%;">
+                    En termes simples, l'intelligence artificielle (IA) fait référence à des systèmes ou des machines qui imitent l'intelligence humaine pour effectuer diverses activités et peuvent être améliorées de manière itérative en fonction des informations qu'elle recueille. L'IA se manifeste sous plusieurs formes.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-sm-6" data-aos="fade-right" style="padding-top: 5%; color: white; padding-left:5% ;">
+                    <h1 style="padding-bottom: 2%;">Cum a aparut? </h1>
+                    <p>
+                        Les débuts de l'intelligence artificielle peuvent être vus immédiatement après la Seconde Guerre mondiale, dans les premiers programmes qui ont résolu des énigmes ou joué à certains jeux. Il y avait deux raisons (en plus de la fascination qu'il exerce sur de nombreuses personnes) que les jeux étaient parmi les premiers domaines d'application de l'intelligence artificielle - premièrement, la performance du programme est facile à mesurer (la plupart du temps, vous gagnez ou perdez un jeu); ensuite, que les règles sont généralement simples et peu nombreuses, de sorte qu'elles peuvent être facilement décrites et utilisées.
+                        Les jeux qu'il expérimentait habituellement étaient les échecs et les dames. L'idée était très simple - étant donné une position sur le plateau, ils ont essayé de générer toutes les séquences de mouvements possibles à partir de ce moment, considérant que l'adversaire choisit toujours le meilleur mouvement. Si une séquence atteignait un état gagnant, alors c'était celle à suivre. Le problème pratique de cette idée était que le nombre de combinaisons à explorer était très élevé (par exemple, aux échecs, de l'ordre de 35 $ ^ {100} $).
+                    </p>
+                </div>
+                <div class="col-sm-4" data-aos="flip-left">
+                    <img src="teacher.svg" alt="Incarcare esuata" class="teacherimage">
+                </div>
+            </div>
+            <div data-aos="zoom-out">
+                <h1 style="color: white; text-align: center; padding:2% 20%; margin-bottom: 8%;" id="cumpotsainvat">Comment puis-je apprendre?</h1>
+            </div>
+            <div class="row" style="color: white;">
+                <div class="col-sm-3" id="python">
+                    <img src="pythonimage.svg" alt="Eroare" style="width: 100%; height: 20%; margin-bottom: 10%;margin-top: 10%;" data-aos="zoom-in" id="pythonimage" onclick="python()">
+                    <p data-aos="fade-up" style="text-indent: 8%;" >Python fait partie des trois principaux langages de programmation utilisés par les programmeurs. En raison de la complexité et de la multitude de bibliothèques disponibles, Python est considéré comme un langage de programmation qui répond aux besoins du domaine de l'IA.</p>
+                </div>
+                <div  class="col-sm-3" id="statistics">
+                    <img src="probabilitati.svg" alt="Eroare" style="width: 100%; height: 20%; margin-bottom: 10%;margin-top: 10%;" data-aos="zoom-in" id="statisticsimage" onclick="statistics()">
+                    <p data-aos="fade-up" style="text-indent: 8%;">Étant donné que Python possède de nombreuses bibliothèques qui impliquent des formules mathématiques, y compris les probabilités et les statistiques, il serait idéal si vous commencez à apprendre les bases dans ce domaine des mathématiques.</p>
+                </div>
+                <div  class="col-sm-3" id="algebra">
+                    <img src="algebra.svg" alt="Eroare" style="width: 90%; height: 20%; margin-bottom: 10%;margin-top: 10%;" data-aos="zoom-in" id="algebraimage" onclick="algebra()"> 
+                    <p data-aos="fade-up" style="text-indent: 8%;">Afin de maîtriser la partie des probabilités, il est important d'aimer les mathématiques afin de pouvoir travailler plus facilement avec les dispersions et les relations entre cas favorables et possibles.</p>
+                </div>
+                <div class="col-sm-3" id="smile">
+                    <img src="zambet.svg" alt="Eroare" style="width: 90%; height: 20%; margin-bottom: 10%;margin-top: 10%;" data-aos="zoom-in" id="smileimage" onclick="smile()">
+                    <p data-aos="fade-up" style="text-indent:8%">
+                        Afin de créer quelque chose d'utile, à la fois dans l'IA et dans d'autres domaines, vous devez être persévérant, optimiste et aimer ce que vous faites. Sans ces ingrédients, vous n'irez pas trop loin.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h1 style="color: white;margin-top: 5%;margin-bottom: 5%; text-align: center;" id="example" data-aos="zoom-in">Exemples de robots intégrés à l'IA</h1>
+            </div>
+            <div>
+                <video src="videoAI.mp4" id="video1" controls type="video/mp4" poster="imagine.jpg" data-aos="fade-right" data-aos-easing="ease-in-back" data-aos-duration="1000" style="width: 50%;height: 50%; position: relative; left: 25%; right: 30%;top: 10%;">Erreur</video>
+            </div>
+            <div style="margin-top: 10%;">
+                <video src="video2AI.mp4" id="video2"controls type="video/mp4" poster="imagine.jpg" data-aos="fade-left" data-aos-easing="ease-in-back" data-aos-duration="1000" style="width: 50%;height: 50%; position: relative; left: 25%; right: 30%;top: 10%;">Erreur</video>
+            </div>
+        </div>
+    </main>
+    <footer id="myfooter">
+        <p style="color: white; text-align:center">Même si vous ne nous voyez pas, nous sommes avec vous. Vous pouvez donc nous trouver sur:</p>
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="#"><i class="fab fa-facebook fa-3x"></i></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="#"><i class="fab fa-youtube fa-3x"></i></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+            </div>
+        </div>
+        <p style="color: white; text-align:center; padding-top: 3%;">Maintenant, nous pouvons également communiquer en:</p>
+        <div class="row">
+            <div class="col-sm-4">
+                <button class="btn btn-primary"><a href="indexengl.html" style="color: white;text-decoration: none;"><img src="UK.jpg" alt="Eroare" style="width: 50%;height: 50%;"> EN</button></a>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary"><a href="index.html" style="color: white;text-decoration: none;"><img src="Romania.jpg" alt="Eroare" style="width: 50%;height: 50%;"> RO</button></a>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary"><a href="indexgermany.html" style="color: white;text-decoration: none;"><img src="Germany.svg" alt="Eroare" style="width: 50%;height: 50%;"> DE</button></a>
+            </div>
+        </div>
+            <p style="color: white; text-align: center; margin-top: 2%;" style="color: white;text-decoration: none;">Copyright &copy;2020.Tous les droits sont réservés.</p> 
+    </footer>
+    </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration:2000
+        });
+        function python(){
+            var a=document.getElementById("pythonimage");
+            a=alert('Pour commencer, nous recommandons le livre en ligne "Automatisez les trucs ennuyeux avec python" ');
+        }
+        function statistics(){
+            var a=document.getElementById("statisticsimage");
+            a=alert('Concernant les statistiques, nous recommandons le site www.statista.com');
+        }
+        function algebra(){
+            var a=document.getElementById("algebraimage");
+            a=alert("Nous savons que l'algèbre n'est pas facile, mais vous devez la traverser pour vous familiariser avec la façon de penser en IA. Vous pouvez commencer avec ce site: versdatascience.com");
+        }
+        function smile(){
+            var a=document.getElementById("smileimage");
+            a=alert("N'oubliez pas de faire une pause de temps en temps. Cela facilitera vos idées.");
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+</body>
+</html>

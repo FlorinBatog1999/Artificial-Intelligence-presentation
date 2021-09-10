@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7f4e7dd9d8.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Inteligenta artificiala</title>
+    <link rel="icon" href="./AI.png">
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <div class="navbar navbar-expand-lg" style="background-color: blue;"><!--clasa navbar este clasa principala pentru bara de navigare-->
+                            <!--clasa collapse navbar-collapse nu este suficienta pentru a afisa elementele din lista unul dupa altul. Pentru asta folosim clasa navbar navbar-expand-lg. Lg este un indicator pentru browser pentru a sti cand sa afiseze elementele in funcyie de marimea ferestrei la un moment dat.-->
+                            <button class="navbar-toggler" data-toggle="collapse" data-target="#navb"><a href="#"><i class="fas fa-bars fa-3x"></i></a></button><!--clasa navbar-toggler afiseaza butonul de meniu atunci cand dimensiunea ferestrei se micsoreaza.--->
+                            <div class="collapse navbar-collapse" id="navb"><!--daca nu ai clasa collapse navbar-collapse elementele din lista vor fi afisate una sub alta.-->
+                                <ul class="navbar-nav mr-auto" id="hamburger"><!--mr-auto= margin right auto. Folosim acwasta clasa intrucat fiecare element nou din lista va fi afisat la dreapta-->
+                                    <li class="navbar-item"><a href="#myfooter" class="navbar-link">CONTACT</a></li><!--clasa navbar-item se refera la randul pe care ne aflam acum in lista iar clasa navbar-link arata linkul la care ne referim acum-->
+                                    <li class="navbar-item"><a href="#example" class="navbar-link">CUM AR ARATA UN ROBOT?</a></li>
+                                    <li class="navbar-item"><a href="#cumpotsainvat" class="navbar-link">CUM POT SA INVAT?</a></li>
+                                </ul>
+                            </div>
+                            <!-- <a href="indexengl.html" style="margin-left: 80%;"><img src="UK.jpg" alt="Eroare" style="width: 70%; height: 20%;"></a> -->
+                </div>
+                <div class="imagine">
+                    <div>
+                        <h1 class="titlu">Inteligenta artificiala</h1>
+                        <button class="btn btn-primary-light" type="button" style="text-decoration: none; color: blue;"><a href="#introduce" style="text-decoration: none;">Sa incepem!</a></button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div>
+                <h1 id="introduce">Ce reprezinta AI?</h1>
+                <p style="color: white; padding-left:4%;">
+                    În termeni simpli, inteligența artificială (IA) se referă la sisteme sau la mașini care imită inteligența umană, pentru a efectua diverse activități și care se pot îmbunătăți iterativ pe baza informațiilor pe care le colectează. IA se manifestă într-o serie de forme.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-sm-6" data-aos="fade-right" style="padding-top: 5%; color: white; padding-left:5% ;">
+                    <h1 style="padding-bottom: 2%;">Cum a aparut? </h1>
+                    <p>
+                        Începuturile inteligenţei artificiale pot fi văzute imediat după al doilea război mondial, în primele programe care rezolvau puzzle-uri sau care jucau anumite jocuri. Au existat două motive (pe lîngă fascinaţia pe care o exercită asupra multora) pentru care jocurile au fost printre primele domenii de aplicare a inteligenţei artificiale - întîi, că performanţa programului este uşor de măsurat (de cele mai multe ori, sau cîştigi sau pierzi un joc); apoi, că regulile sunt ,în general, simple şi puţine la număr, deci pot fi uşor descrise şi folosite.
+                        Jocurile cu care s-a experimentat îndeobşte au fost cele de şah şi de dame. Ideea era foarte simplă - fiind dată o poziţie pe tablă, se încerca să se genereze toate secvenţele posibile de mutări de la acel moment încolo, considerînd că adversarul alege întotdeauna mutarea cea mai bună. Dacă o secvenţă ajungea într-o stare cîştigătoare, atunci ea era cea de urmat. Problema practică de care s-a lovit această idee a fost că numărul combinaţiilor de explorat era foarte mare (de exemplu, la şah, de ordinul $35^{100}$).
+                    </p>
+                </div>
+                <div class="col-sm-4" data-aos="flip-left">
+                    <img src="teacher.svg" alt="Incarcare esuata" class="teacherimage">
+                </div>
+            </div>
+            <div data-aos="zoom-out">
+                <h1 style="color: white; text-align: center; padding:2% 20%; margin-bottom: 8%;" id="cumpotsainvat">Cum pot sa invat?</h1>
+            </div>
+            <div class="row" style="color: white;">
+                <div class="col-sm-3" id="python">
+                    <img src="pythonimage.svg" alt="Eroare" style="width: 100%; height: 20%; margin-bottom: 10%;margin-top: 10%;" data-aos="zoom-in" id="pythonimage" onclick="python()">
+                    <p data-aos="fade-up" style="text-indent: 8%;" >Python este in top trei limbaje de programare utilizate de programatori. Datorita complexitatii si multidudinii de librarii disponibile, Python este considerat ca fiind un limbaj de programare ce se pliaza pe nevoile domeniului AI.</p>
+                </div>
+                <div  class="col-sm-3" id="statistics">
+                    <img src="probabilitati.svg" alt="Eroare" style="width: 100%; height: 20%; margin-bottom: 10%;margin-top: 10%;" data-aos="zoom-in" id="statisticsimage" onclick="statistics()">
+                    <p data-aos="fade-up" style="text-indent: 8%;">Intrucat Python are multe librarii care implica formule matematice, incluzand si probabilitati si statistica, ar fi ideal daca ai incepe sa inveti conceptele de baza din acest domeniu al matematicii.</p>
+                </div>
+                <div  class="col-sm-3" id="algebra">
+                    <img src="algebra.svg" alt="Eroare" style="width: 90%; height: 20%; margin-bottom: 10%;margin-top: 10%;" data-aos="zoom-in" id="algebraimage" onclick="algebra()"> 
+                    <p data-aos="fade-up" style="text-indent: 8%;">Pentru a stapani partea de probabilitati este important sa ne placa matematica pentru a putea fi mai usor sa lucram cu dispersii si raporturile dintre cazurile favorabile si posibile.</p>
+                </div>
+                <div class="col-sm-3" id="smile">
+                    <img src="zambet.svg" alt="Eroare" style="width: 90%; height: 20%; margin-bottom: 10%;margin-top: 10%;" data-aos="zoom-in" id="smileimage" onclick="smile()">
+                    <p data-aos="fade-up" style="text-indent:8%">
+                       Pentru a reusi sa creezi ceva util, atat in AI cat si in alte domenii, trebuie sa fii perseverent, optimist si sa iti placa ceea ce faci. Fara aceste ingrediente nu vei ajunge prea departe.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h1 style="color: white;margin-top: 5%;margin-bottom: 5%; text-align: center;" id="example" data-aos="zoom-in">Exemple de roboti construiti in AI</h1>
+            </div>
+            <div>
+                <video src="videoAI.mp4" id="video1" controls type="video/mp4" poster="imagine.jpg" data-aos="fade-right" data-aos-easing="ease-in-back" data-aos-duration="1000" style="width: 50%;height: 50%; position: relative; left: 25%; right: 30%;top: 10%;">Eroare</video>
+            </div>
+            <div style="margin-top: 10%;">
+                <video src="video2AI.mp4" id="video2"controls type="video/mp4" poster="imagine.jpg" data-aos="fade-left" data-aos-easing="ease-in-back" data-aos-duration="1000" style="width: 50%;height: 50%; position: relative; left: 25%; right: 30%;top: 10%;">Eroare</video>
+            </div>
+        </div>
+    </main>
+    <footer id="myfooter">
+        <p style="color: white; text-align:center">Chiar daca nu ne vezi, noi iti suntem alaturi. De aceea, ne gasesti pe:</p>
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="#"><i class="fab fa-facebook fa-3x"></i></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="#"><i class="fab fa-youtube fa-3x"></i></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+            </div>
+        </div>
+        <p style="color: white; text-align:center; padding-top: 3%;"> Acum putem comunica si in:</p>
+        <div class="row">
+            <div class="col-sm-4">
+                <button class="btn btn-primary"><a href="indexengl.html" style="color: white;text-decoration: none;"><img src="UK.jpg" alt="Eroare" style="width: 50%;height: 50%;"> EN</button></a>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary"><a href="indexfrance.html" style="color: white;text-decoration: none;"><img src="France.png" alt="Eroare" style="width: 50%;height: 50%;"> FR</button></a>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary"><a href="indexgermany.html" style="color: white;text-decoration: none;"><img src="Germany.svg" alt="Eroare" style="width: 50%;height: 50%;"> DE</button></a>
+            </div>
+        </div>
+            <p style="color: white; text-align: center; margin-top: 2%;">Copyright &copy;2020.Toate drepturile sunt rezervate.</p> 
+    </footer>
+    </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration:2000
+        });
+        function python(){
+            var a=document.getElementById("pythonimage");
+            a=alert('Pentru inceput iti recomandam cartea online "Automate the boring stuff with python" ');
+        }
+        function statistics(){
+            var a=document.getElementById("statisticsimage");
+            a=alert('In ceea ce priveste statistica iti recomandam site-ul www.statista.com');
+        }
+        function algebra(){
+            var a=document.getElementById("algebraimage");
+            a=alert(' Stim ca algebra nu este usoara, insa trebuie sa o parcurgi pentru a te familiariza cu modul de gandire din AI. Poti incepe cu acest site: towardsdatascience.com');
+        }
+        function smile(){
+            var a=document.getElementById("smileimage");
+            a=alert('Nu uita sa iei si o pauza din cand in cand. Astfel ideile iti vor veni mai usor.');
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+</body>
+</html>
